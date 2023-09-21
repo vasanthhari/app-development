@@ -1,0 +1,163 @@
+/* Styles for the page background */
+.page {
+    width: 100%;
+    height: 16vh;
+    background-color: #f3f3f3; /* Adjust to your desired background color */
+  }
+  
+  /* Styles for the event section titles */
+  .pname1 {
+    position: absolute;
+    bottom: 20%;
+    font-size: 150%;
+    left: 16%;
+    color: #000000;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .pname3 {
+    position: absolute;
+    bottom: 20%;
+    font-size: 150%;
+    left: 72%;
+    color: #0a0006;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  /* Styles for the dropdowns */
+  
+  
+  /* Styles for the images inside dropdowns */
+  .dropdown2 {
+    position: absolute;
+    display: inline-block;
+    left: 65%;
+    top: 35%;
+    border-radius: 3%;
+  }
+  .dropdown1 {
+    position: absolute;
+    display: inline-block;
+    left: 10%;
+    top: 35%;
+    border-radius: 3%;
+  }
+  .img1{
+    position:fixed;
+    left: 10%;
+    top:35%
+  }
+  .img2 {
+    position:fixed;
+    left: 65%;
+    top:35%
+  }
+  
+  /* Styles for the dropdown content */
+  .dropdown-content1,
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #fffafa;
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Styles for the dropdowns when hovered */
+  .dropdown1:hover .dropdown-content1,
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  
+  /* Styles for the description text inside the dropdowns */
+  .desc1,
+  .desc2 {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styles for the main content container */
+  .Bg {
+    width: 100%;
+    height: 16vh;
+    bottom: 60%;
+    box-shadow: 0 0.188em 1.550em black;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 83.8%;
+    left: 0%;
+  }
+  
+  /* Styles for the logo and text links in the main content */
+  .logo1 {
+    position: absolute;
+    height: 100%;
+    color: #070004;
+    left: 33%;
+    top: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .logo2 {
+    position: absolute;
+    font-size: 90%;
+    height: 100%;
+    color: #030002;
+    left: 59%;
+    top: 57%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #home {
+    position: absolute;
+    font-size: 110%;
+    color:#000000;
+    left: 5%;
+    top: 75%;
+    cursor: pointer;
+  }
+  
+  #home:hover {
+    transform: scale(1.25);
+  }
+  #about {
+    position: absolute;
+    color: #000000;
+    font-size: 110%;
+    left: 15%;
+    top: 75%;
+    cursor: pointer;
+  }
+  
+  #about:hover {
+    transform: scale(1.25);
+  }
+  
+  .textzz a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .textzz {
+    position: absolute;
+    text-align: center;
+    left: 85.5%;
+    top: 77%;
+    color: #000000;
+    margin: 0;
+    width: max-content;
+    font-size: 110%;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .textzz:hover {
+    transform: scale(1.25);
+  }
