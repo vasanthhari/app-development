@@ -1,0 +1,57 @@
+/* OnlineEvent.css */
+
+/* Style for the entire OnlineEvent component container */
+div.online-event-container {
+    text-align: center;
+    margin: 20px 20px 0; /* Add margin-top to create space below the header */
+    margin-top: 10%;
+  }
+  div.online-event-container1{
+    text-align: center;
+    margin: 20px 20px 0; /* Add margin-top to create space below the header */
+    margin-top: 30%;
+  }
+  
+  /* Style for individual event sections (title, image, description) */
+  div.event-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Style for event titles */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for event images */
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Style for event descriptions */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .unplugged-header {
+    background-color: #000000f1;
+    padding: 20px 0; /* Adjust the vertical padding as needed */
+    text-align: center; /* Center align the text */
+    color: white; /* Text color */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15%;
+  }
+  
