@@ -1,0 +1,84 @@
+/* Booking.module.css */
+
+/* Target the container within the Booking component */
+.booking-container {
+  max-width: 600px; /* Set the maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: rgba(168, 222, 243, 0.808);
+  padding: 20px;
+  border: 1px solid rgb(109, 109, 177);
+  border-radius: 7px;
+  box-shadow: 0 0 10px darkgray; /* Add a box shadow */
+  text-align: center; /* Center-align the content */
+}
+
+/* Target input and form elements within the Booking component */
+.booking-container input[type="text"],
+.booking-container input[type="email"],
+.booking-container input[type="number"],
+.booking-container input[type="password"],
+.booking-container input[type="date"],
+.booking-container select,
+.booking-container textarea {
+  width: 50%;
+  padding: 8px; /* Reduce the padding to make text input fields smaller */
+  border: 1px solid rgba(128, 128, 128, 0.801); /* Adjust border style */
+  border-radius: 8px; /* Adjust the border radius */
+  margin: 10px 0; /* Adjust vertical margin */
+}
+
+/* Target the fieldset within the Booking component */
+.booking-container fieldset {
+  background-color: whitesmoke;
+  border: 1px solid rgba(128, 128, 128, 0.801); /* Adjust border style */
+  border-radius: 18px;
+  padding: 20px; /* Increase padding for better spacing */
+  width: 50%;
+  margin: 0 auto; /* Center-align the fieldset */
+}
+
+/* Target the submit button within the Booking component */
+.booking-container input[type="submit"] {
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px; /* Add some top margin */
+}
+
+/* Style for submit button hover effect within the Booking component */
+.booking-container input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+/* Target the main heading within the Booking component */
+.booking-container .main_heading,
+.booking-container h2, /* Target all h2 headings */
+.booking-container legend /* Target legends within fieldsets */ {
+  text-align: center;
+  color: black; /* Set text color to black */
+}
+
+/* Target the "pf" class within the Booking component */
+.booking-container .pf {
+  text-align: center;
+  color: black;
+}
+
+/* Target the navigation element */
+.booking-container nav {
+  color: black;
+}
+
+/* Center-align the gender radio buttons */
+.booking-container input[type="radio"] {
+  margin: 0 auto;
+}
+
+/* Style for Name and Mail labels */
+.booking-container label[for="name"],
+.booking-container label[for="email"] {
+  color: black;
+}

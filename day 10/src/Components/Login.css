@@ -1,0 +1,132 @@
+/* Apply styles only to the login page */
+#login-page {
+    display: flex;
+    height:2000px;
+  }
+  
+  #login-page .notice,
+  #login-page .login {
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #login-page .login {
+    width: 30%;
+    height: 100vh;
+    background: #0a0808;
+    padding: 70px;
+  }
+  
+  #login-page .login a {
+    margin-top: 25px;
+    text-align: center;
+    color:black;
+  }
+  
+  #login-page .form-login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  
+  #login-page .form-login label {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    color: #ffffff;
+  }
+  
+  #login-page .input-username,
+  #login-page .input-password, 
+  #login-page .input-phone, 
+  #login-page .input-email {
+    width: 100%;
+    background: #ededed;
+    border-radius: 25px;
+    margin: 4px 0 10px 0;
+    padding: 10px;
+    display: flex;
+  }
+  
+  #login-page .icon {
+    padding: 4px;
+    color: #666;
+    min-width: 30px;
+    text-align: center;
+  }
+  
+  #login-page input[type="text"],
+  #login-page input[type="password"],
+  #login-page input[type="email"], 
+  #login-page input[type="tel"] {
+    width: 100%;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 4px 0;
+    outline: none;
+  }
+  
+  #login-page button[type="submit"] {
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 14px;
+    background: rgb(50, 1, 60);
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: ease all 0.3s;
+  }
+  
+  #login-page button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+  
+  #login-page .background {
+    width: 70%;
+    padding: 40px;
+    height: 110vh;
+    background: linear-gradient(60deg, rgb(56, 1, 58), #000000),  center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  
+  #login-page .background h1 {
+    max-width: 420px;
+    color: #FFF;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #login-page .background p {
+    max-width: 650px;
+    color: #1a1a1a;
+    font-size: 18px;
+    text-align: right;
+    padding: 0;
+    margin: 15px 0 0 0;
+  }
+  
+  #login-page .checkbox label {
+    display: inline;
+    margin: 0;
+  }
+  
+  /* Reset styles for other pages */
+  /* Add your global styles for other pages here */
+  

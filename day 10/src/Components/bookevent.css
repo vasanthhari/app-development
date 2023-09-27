@@ -1,0 +1,220 @@
+/* Apply styles only to elements within a specific container with a unique class */
+.cart-page {
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart-page .CartContainer {
+    width: 200%;
+    height: 90%;
+    margin-left: 25%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+  }
+  
+  .cart-page .Header {
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-page .Heading {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #2F3841;
+  }
+  
+  .cart-page .Action {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+  }
+  
+  .cart-page .Cart-Items {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Add unique class names to elements within the specific page */
+  .cart-page .image-box {
+    width: 15%;
+    text-align: center;
+  }
+  
+  .cart-page .about {
+    height: 100%;
+    width: 24%;
+  }
+  
+  .cart-page .title1 {
+    padding-top: 10px;
+    line-height: 10px;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+    position: absolute;
+    margin-top: 2%;
+  }
+  
+  .cart-page .title2 {
+    padding-top: 10px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+    position: absolute;
+    margin-top: 2%;
+  }
+  
+  .cart-page .subtitle {
+    line-height: 100px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #909090;
+    position: absolute;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  
+  .cart-page .green {
+    padding-bottom: 7%;
+    padding-right: 80%;
+    margin-top: 65%;
+  }
+  
+  .cart-page .counter {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-page .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+  }
+  
+  .cart-page .count {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
+  }
+  
+  .cart-page .prices {
+    height: 100%;
+    text-align: right;
+  }
+  
+  .cart-page .amount {
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+  }
+  
+  .cart-page .save {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #1687d9;
+    cursor: pointer;
+  }
+  
+  .cart-page .remove {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+  }
+  
+  .cart-page .pad {
+    margin-top: 5px;
+  }
+  
+  .cart-page hr {
+    width: 66%;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .cart-page .checkout {
+    float: right;
+    margin-right: 5%;
+    width: 28%;
+  }
+  
+  .cart-page .total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-page .Subtotal {
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #202020;
+  }
+  
+  .cart-page .items {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+  }
+  
+  .cart-page .total-amount {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    color: #202020;
+  }
+  
+  .cart-page .button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
+  }
+  

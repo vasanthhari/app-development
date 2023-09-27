@@ -1,0 +1,118 @@
+/* Add a unique class selector to encapsulate your styles */
+/* For example, if you want to style a container with class "my-terms-container" */
+
+.my-terms-container {
+    /* Reset default styles for HTML and body tags */
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+  
+    /* Remove focus styles from specific elements */
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: none;
+    }
+  }
+  
+  /* Apply styles only within the "my-terms-container" element */
+  .my-terms-container .termsAndConditions {
+    z-index: 1000;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: all .2s;
+    backface-visibility: hidden;
+  }
+  
+  .my-terms-container .termsAndConditionsHeading {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color:white;
+  }
+  
+  .my-terms-container .termsParagraphIntro {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Add more styles within ".my-terms-container" as needed */
+  /* Be sure to prefix each rule with ".my-terms-container" to encapsulate them */
+  
+  /* ... */
+  
+  /* Font Colors */
+  .my-terms-container .lightGreen {
+    color: rgb(85, 189, 134);
+  }
+  
+  .my-terms-container .blue {
+    color: #2998ff;
+  }
+  
+  .my-terms-container .orange {
+    color: #ff7730;
+  }
+  
+  .my-terms-container .purple {
+    color: #390fe1;
+  }
+  
+  /* Set the colors for the lines */
+  .my-terms-container .lineColorGreen {
+    background-image: linear-gradient(to right bottom, rgb(85, 189, 134), rgb(11, 103, 92));
+  }
+  
+  .my-terms-container .lineColorBlue {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  }
+  
+  .my-terms-container .lineColorOrange {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  }
+  
+  .my-terms-container .lineColorPurple {
+    background-image: linear-gradient(to bottom right, #b25f88, #2a0073);
+  }
+  
+  .my-terms-container .closeTerms {
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .my-terms-container .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    z-index: 1001;
+    background-color: black;
+    max-width: 100%;
+    height: 850px;
+  }
+  .spl{
+    color:white;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

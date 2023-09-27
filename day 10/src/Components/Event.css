@@ -1,0 +1,90 @@
+/* Scoped CSS for CampSites component */
+.camp-sites {
+  background-color: rgb(255, 255, 255);
+}
+
+.camp-sites-nav {
+  text-transform: uppercase;
+  color: grey;
+  border-bottom: 2px dashed #8b134d;
+  width: 30%;
+  padding: 20px 0;
+  margin-left: 3.5%;
+  font-weight: 900;
+}
+
+.camp-sites-img {
+  margin-top: 1.5%;
+  margin-left: 2.5%;
+  width: 95%;
+  border-radius: 5%;
+}
+
+.camp-sites-h2 {
+  color: #3f0649;
+  margin-left: 3.5%;
+  margin-top: 40px; 
+}
+
+.camp-sites-h4 {
+  color: rgb(255, 0, 136);
+  margin-left: 9.5%;
+  font-weight: bold;
+}
+
+.camp-sites-b {
+  color: #bc05a1;
+  margin-left: 9.5%;
+}
+
+.camp-sites-p {
+  color: #bc05a1;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+
+.camp-sites-li {
+  color: rgb(255, 0, 136);
+  margin-left: 9.5%;
+}
+
+.camp-sites-button {
+  border: 2px solid rgba(247, 2, 194, 0.551);
+  border-radius: 20%;
+  color: rgb(250, 250, 251);
+  background-color: rgba(247, 2, 51, 0.551);
+  margin-left: 9.5%;
+  margin-bottom: 1.5%;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+.camp-sites-button:hover {
+  background-color: blue;
+  color: white; 
+}
+.camp-sites-figcaption {
+  margin-left: 2.5%;
+  color: #71138b;
+  font-weight: bold;
+}
+
+.camp-sites-div {
+  background-color: white;
+  border-radius: 10%;
+  margin: 1.5%;
+  justify-content: space-evenly;
+  padding: 0.5px;
+}
+
+.camp-sites-columns {
+  display: flex;
+  background: linear-gradient(60deg, rgba(183, 19, 189, 0.5), #854a57),  center no-repeat;
+}
+
+.camp-sites-columns-div {
+  width: 30%;
+}

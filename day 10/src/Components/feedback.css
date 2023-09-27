@@ -1,0 +1,230 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash');
+
+/* Feedback page styles */
+.feedback-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  background-color: #90AFC5;
+  font-family: 'Cherry Swash', Arial;
+  font-size: 25px;
+}
+
+/* Page title */
+.feedback-page .kkk1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  position: relative;
+  left: -550px;
+  top: -5px;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Form container */
+.feedback-page #survey-form {
+  margin-left: 4em;
+  margin-right: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+  padding-left: 3em;
+  border-radius: 3%;
+  background-color: #2A3132;
+  color: white;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto; 
+}
+
+/* Description */
+.feedback-page #description {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Form elements */
+.feedback-page .input-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+}
+
+.feedback-page .input-box input,
+.feedback-page .input-box textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.feedback-page .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.feedback-page .input-box input:focus ~ span,
+.feedback-page .input-box textarea:focus ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+/* Submit button */
+.feedback-page input[type="submit"] {
+  width: 100%;
+  background: #c042a4;
+  color: #7b1f1f;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #bc3f84;
+  transition: 0.5s;
+}
+
+.feedback-page input[type="submit"]:hover {
+  background: #e75284;
+  color: #ac2b78;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 991px) {
+  .feedback-page .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-page #survey-form {
+    font-size: 1.3em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .feedback-page input[type="text"],
+  .feedback-page input[type="email"],
+  .feedback-page input[type="submit"],
+  .feedback-page textarea {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .feedback-page #comment-box {
+    max-width: 9em;
+    margin-top: 2em;
+  }
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 770px) and (max-height: 1030px) {
+  .feedback-page #title {
+    font-size: 3em;
+  }
+  
+  .feedback-page #description {
+    padding-top: 1.4em;
+    font-size: 2em;
+  }
+  
+  .feedback-page #survey-form {
+    font-size: 1.3em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .feedback-page input[type="text"],
+  .feedback-page input[type="email"],
+  .feedback-page input[type="number"],
+  .feedback-page input[type="submit"],
+  .feedback-page textarea {
+    width: 10em;
+    height: 1em; 
+    margin-top: 2em;
+    font-size: 0.7em;
+  }
+
+  .feedback-page #status {
+    width: 10em;
+    height: 1em; 
+    height: 1.2em;
+    font-size: 1em;
+  }
+
+  .feedback-page #submit {
+    font-size: 1.5em; 
+    margin-top: 1em;
+  }
+
+  .feedback-page #comment-box {
+    max-width: 9em;
+    margin-top: 2em;
+  }
+}
+
+/* Responsive styles for most mobile devices */
+@media (max-width: 420px) and (max-height: 812px) {
+  .feedback-page #title {
+    font-size: 1.5em;
+  }
+  
+  .feedback-page #description {
+    padding-top: 1.4em;
+    font-size: 1em;
+  }
+  
+  .feedback-page #survey-form {
+    font-size: 0.65em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .feedback-page input[type="text"],
+  .feedback-page input[type="email"],
+  .feedback-page input[type="number"],
+  .feedback-page input[type="submit"],
+  .feedback-page textarea {
+    width: 10em;
+    height: 1em; 
+    margin-top: 2em;
+  }
+
+  .feedback-page #dropdown {
+    width: 10em;
+    height: 1em; 
+    height: 2em;
+  }
+
+  .feedback-page #submit {
+    font-size: 1.5em; 
+    margin-top: 2em;
+  }
+
+  .feedback-page #comment-box {
+    max-width: 9em;
+    margin-top: 2em;
+  }
+}

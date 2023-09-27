@@ -1,0 +1,155 @@
+import React, { useState } from 'react';
+import './Login.css';
+import { Link, useNavigate } from 'react-router-dom';
+
+
+function Register() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    setPhoneNumber(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
+  const nav = useNavigate(); 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const trimmedUsername = username.trim();
+    const trimmedEmail = email.trim();
+    const trimmedPhoneNumber = phoneNumber.trim();
+    const trimmedPassword = password.trim();
+    const trimmedConfirmPassword = confirmPassword.trim();
+
+    if (!trimmedUsername || !trimmedEmail || !trimmedPhoneNumber || !trimmedPassword) {
+      alert('All fields are required');
+      return;
+    }
+
+    if (isNaN(trimmedPhoneNumber)) {
+      alert('Please enter a valid phone number with numeric digits only');
+      return;
+    }
+
+    if (trimmedPhoneNumber.length !== 10) {
+      alert('Please enter a 10-digit phone number');
+      return;
+    }
+
+    if (trimmedPassword !== trimmedConfirmPassword) {
+      alert('Password and Confirm Password do not match');
+      return;
+    }
+    alert('Registration successful!');
+    setTimeout(() => {
+        nav("/userlogin");
+      }, 1000);
+  };
+
+  return (
+    <div id="login-page">
+      <div className="login">
+        <h2 className="login-title">Register</h2>
+        <p className="notice">Please enter the details</p>
+        <form className="form-login" onSubmit={handleSubmit}>
+        <label htmlFor="username">Username</label>
+        <div className="input-username">
+          <i className="fas fa-user icon"></i>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter your username"
+            required
+            value={username}
+            onChange={handleUsernameChange}
+          />
+        </div>
+          <label htmlFor="email">Email</label>
+          <div className="input-email">
+            <i className="fas fa-envelope icon"></i>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              value={email}
+              onChange={handleEmailChange}
+            />
+          </div>
+          <label htmlFor="phoneNumber">Phone Number</label>
+          <div className="input-phone">
+            <i className="fas fa-phone icon"></i>
+            <input
+              type="tel"
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              required
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+            />
+          </div>
+          <label htmlFor="password">Password</label>
+          <div className="input-password">
+            <i className="fas fa-lock icon"></i>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+              value={password}
+              onChange={handlePasswordChange}
+            />
+          </div>
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <div className="input-password">
+            <i className="fas fa-lock icon"></i>
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm your password"
+              required
+              value={confirmPassword}
+              onChange={handleConfirmPasswordChange}
+            />
+          </div>
+          <button type="submit">
+            <i className="fas fa-door-open"></i> Sign Up
+          </button>
+        </form>
+        <br />
+        <Link to="/userlogin">
+          <p>Already have an account? Login here!</p>
+        </Link>
+      </div>
+      <div className="background">
+        <h1>Join "Unplugged Events" - Where Every Event Begins!</h1> 
+        <h2>
+          We're excited to welcome you to our event management community. Unlock a world of possibilities, from planning and organizing unforgettable gatherings to discovering and attending incredible events.
+          Signing up is your first step towards:
+          Creating and managing your own events effortlessly.
+          Don't miss out! Join us today and start turning your event dreams into reality.
+          Let's make every moment an event to remember with <em>Unplugged Events.</em>
+          </h2>
+      </div>
+    </div>
+  );
+}
+
+export default Register;

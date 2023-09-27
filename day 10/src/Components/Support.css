@@ -1,0 +1,256 @@
+/* Reset styles */
+.support-page * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* Apply styles to the title container */
+.faq-title-container {
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Add padding to provide space around the title */
+  background-color: #070707; /* Background color for the title container */
+  border: 1px solid #ddd; /* Add a border for visual separation */
+  margin: 20px auto; /* Center the container horizontally and provide vertical margin */
+  width: 60%; /* Set a specific width for the container */
+  border-radius: 5px; /* Add rounded corners to the container */
+  width: 1100px;
+  margin-left: 0%;
+}
+/* Footer links styles */
+.support-page .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px; /* Adjust the margin as needed */
+}
+
+.support-page .footer-links a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 20px; /* Add space between links */
+}
+
+.support-page .footer-links a:hover {
+  text-decoration: underline;
+}
+
+  /* Body styles */
+  .support-page body {
+    padding: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    background-color: #eeeef1;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  @media (max-width: 768px) {
+    .support-page body {
+      padding: 0;
+    }
+  }
+  
+  /* Container styles */
+  .support-page .container {
+    max-width: 1145px;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+ 
+.support-page .search {
+    padding: 20px; /* Reduce padding */
+    max-width: 400px; /* Make the container smaller in the horizontal direction */
+    margin: 0 auto; /* Center the container horizontally */
+    border-radius: 5px;
+    background-color: #1B1B30;
+    text-align: left;
+    text-align: center;
+    margin-top: 50px; /* Add some top margin */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .support-page .search {
+      max-width: unset;
+      margin-left: 0;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+  }
+  
+  @media (max-width: 810px) {
+    .support-page .search {
+      max-width: unset;
+      margin-left: 0;
+    }
+  }
+  
+  .support-page .search-title {
+    margin: 0;
+    color: #BBBBD7;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: left;
+  }
+  
+  .support-page .search-form {
+    position: relative;
+    margin-top: 25px;
+  }
+
+  /* Main section styles */
+  .support-page .main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  
+  @media (max-width: 768px) {
+    .support-page .main {
+      margin-top: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  
+  /* Menu section styles */
+  .support-page .menu {
+    width: 280px;
+    padding: 30px;
+    margin-right: 30px;
+    background-color: #1b1b30;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .support-page .menu {
+      width: 100%;
+      margin-right: 0;
+      border-radius: 0;
+    }
+  }
+  
+  .support-page .menu-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #bbbbd7;
+    margin-top: 20px;
+  }
+  
+  .support-page .menu-links {
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #141428;
+  }
+  
+  .support-page .menu-link {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #786cd5;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .support-page .menu-link:hover {
+    color: #fff;
+    transition: color 250ms;
+  }
+  
+  /* Support section styles */
+  .support-page .support {
+    margin-top: 25px;
+  }
+  
+  .support-page .support-title {
+    color: #bbbbd7;
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .support-page .support-text {
+    margin-top: 15px;
+    color: #bbbbd7;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .support-page .support-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #786cd5;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Content section styles */
+  .support-page .content {
+    width: 100%;
+    max-width: 735px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 30px; /* Add some padding to the content */
+  }
+  
+  @media (max-width: 768px) {
+    .support-page .content {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+  }
+  
+  .support-page .content-item {
+    position: relative;
+    padding: 30px;
+    margin-top: 10px;
+    background-color: #1b1b30;
+  }
+  
+  .support-page .content-item:first-child {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .support-page .content-item {
+      margin-top: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+  }
+  
+  .support-page .content-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #bbbbd7;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .support-page .badge {
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .support-page .badge-primary {
+    color: #ff7e9c;
+    background-color: rgba(252, 124, 154, .1);
+  }
+  
+  .support-page .badge-secondary {
+    color: #7ea1ff;
+    background-color: rgba(124, 152, 252, .1);
+  }
